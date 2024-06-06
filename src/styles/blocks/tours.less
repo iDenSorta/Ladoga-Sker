@@ -1,0 +1,67 @@
+// main: ../style.less
+
+.tours {
+  height: fit-content;
+  background: linear-gradient(
+    180deg,
+    rgba(187, 235, 255, 1) 0%,
+    rgba(187, 235, 255, 1) 60%,
+    rgba(187, 235, 255, 0) 100%
+  );
+
+  .tours-wrapper {
+    padding: (16 / @mobile * 100vw);
+    margin-bottom: (16 / @mobile * 100vw);
+  }
+  span.big {
+    display: block;
+    margin-bottom: (16 / @mobile * 100vw);
+  }
+  p {
+    margin-bottom: (16 / @mobile * 100vw);
+  }
+
+  .cards-wrapper__scroll {
+    overflow: scroll;
+    padding: 0 (16 / @mobile * 100vw);
+    margin-bottom: (72 / @mobile * 100vw);
+  }
+  .cards-wrapper {
+    display: flex;
+    gap: (16 / @mobile * 100vw);
+    width: fit-content;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .card-wrapper {
+    background-color: #daf4ff;
+    border-radius: (16 / @mobile * 100vw);
+    width: (290 / @mobile * 100vw);
+    height: (355 / @mobile * 100vw);
+
+    padding: (12 / @mobile * 100vw);
+
+    .card-img {
+      width: 100%;
+      min-height: (188 / @mobile * 100vw);
+      margin-bottom: (12 / @mobile * 100vw);
+      img {
+        width: 100%;
+        border-radius: (4 / @mobile * 100vw);
+      }
+    }
+    span {
+      display: block;
+      margin-bottom: (8 / @mobile * 100vw);
+      &.card-bold {
+        font-size: (18 / @mobile * 100vw);
+        line-height: (18 / @mobile * 100vw);
+        font-weight: bold;
+      }
+      &.card-span {
+        font-size: (12 / @mobile * 100vw);
+        line-height: (16 / @mobile * 100vw);
+      }
+    }
+  }
+}

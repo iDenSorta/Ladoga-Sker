@@ -1,0 +1,47 @@
+// main: ../style.less
+
+.mb-wrapper {
+  height: fit-content;
+  padding: 0 (16 / @mobile * 100vw) (110 / @mobile * 100vw)
+    (16 / @mobile * 100vw);
+  background-image: url(../../img/mb-bg__mobile-top.svg),
+    url(../../img/mb-bg__mobile-bottom.svg);
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+
+  span.title {
+    margin-bottom: (20 / @mobile * 100vw);
+  }
+  p {
+    text-align: center;
+    margin-bottom: (32 / @mobile * 100vw);
+  }
+  img {
+    border-radius: (12 / @mobile * 100vw);
+    width: 100%;
+    margin-bottom: (40 / @mobile * 100vw);
+  }
+  .mb-list {
+    .mb-list__card {
+      display: flex;
+      align-items: center;
+      gap: (12 / @mobile * 100vw);
+      margin-bottom: (32 / @mobile * 100vw);
+      [class^="icon-"],
+      [class*=" icon-"] {
+        font-size: (32 / @mobile * 100vw);
+      }
+
+      .mb-list__card-text {
+        display: flex;
+        gap: (8 / @mobile * 100vw);
+        flex-direction: column;
+        p {
+          text-align: inherit;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

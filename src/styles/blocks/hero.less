@@ -1,0 +1,29 @@
+// main: ../style.less
+
+.hero {
+  height: (390 / @mobile * 100vw);
+  background-image: url(/src/img/hero-bg.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: (200 / @mobile * 100vw);
+    height: (44 / @mobile * 100vw);
+    margin-bottom: (32 / @mobile * 100vw);
+  }
+
+  span.orange {
+    margin-top: (24 / @mobile * 100vw);
+    margin-bottom: (12 / @mobile * 100vw);
+  }
+  .img {
+    width: (32 / @mobile * 100vw);
+    height: (32 / @mobile * 100vw);
+  }
+}

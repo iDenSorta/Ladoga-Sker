@@ -1,0 +1,134 @@
+// main: ../style.less
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Galatea";
+  font-weight: 500;
+  font-size: (12 / @mobile * 100vw);
+  line-height: (12 / @mobile * 100vw);
+  -webkit-font-smoothing: antialiased;
+
+  color: @color-blue;
+
+  background: white;
+}
+
+h1 {
+  font-size: (28 / @mobile * 100vw);
+  font-weight: 700;
+  line-height: (36 / @mobile * 100vw);
+  margin: 0 0 (32 / @mobile * 100vw);
+  text-align: center;
+}
+
+p {
+  line-height: (20 / @mobile * 100vw);
+}
+
+a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: (100 / @mobile * 100vw);
+  background-color: @color-orange;
+  color: white;
+  font-size: (12 / @mobile * 100vw);
+}
+.link {
+  color: @color-orange;
+  font-size: (16 / @mobile * 100vw);
+  line-height: (20 / @mobile * 100vw);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+
+span {
+  &.orange {
+    color: @color-orange;
+  }
+  &.circle {
+    border: (1 / @mobile * 100vw) @color-blue solid;
+    border-radius: (100 / @mobile * 100vw);
+    padding: (0 / @mobile * 100vw) (4 / @mobile * 100vw) (6 / @mobile * 100vw)
+      (4 / @mobile * 100vw);
+  }
+  &.wavy {
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: (1 / @mobile * 100vw);
+    text-underline-offset: (4 / @mobile * 100vw);
+    text-decoration-style: wavy;
+  }
+  &.arrow {
+    display: inline-block;
+    position: relative;
+    margin-left: (32 / @mobile * 100vw);
+    height: fit-content;
+
+    &::before {
+      position: absolute;
+      bottom: (0 / @mobile * 100vw);
+      right: (260 / @mobile * 100vw);
+
+      content: "";
+      width: (32 / @mobile * 100vw);
+      height: (32 / @mobile * 100vw);
+      background-image: url(/src/img/h1-arrow.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &.big {
+    font-size: (24 / @mobile * 100vw);
+    line-height: (32 / @mobile * 100vw);
+  }
+  &.medium {
+    font-size: (16 / @mobile * 100vw);
+    line-height: (24 / @mobile * 100vw);
+    font-weight: 400;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.title {
+    display: block;
+    text-align: center;
+    font-size: (28 / @mobile * 100vw);
+    line-height: (32 / @mobile * 100vw);
+    font-weight: bold;
+  }
+
+  &.tag {
+    border: (1 / @mobile * 100vw) @color-blue solid;
+    border-radius: (100 / @mobile * 100vw);
+    padding: (6 / @mobile * 100vw) (16 / @mobile * 100vw);
+
+    font-size: (10 / @mobile * 100vw);
+    line-height: (12 / @mobile * 100vw);
+    font-weight: 500;
+  }
+
+  &.icon {
+    font-family: "icomoon";
+    font-size: 200px;
+    &:before {
+      content: "\e901";
+    }
+  }
+}

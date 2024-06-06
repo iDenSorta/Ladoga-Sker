@@ -1,0 +1,32 @@
+// main: ../style.less
+
+.book-now {
+  height: fit-content;
+  background: linear-gradient(
+    180deg,
+    rgba(187, 235, 255, 1) 0%,
+    rgba(187, 235, 255, 1) 60%,
+    rgba(187, 235, 255, 0) 100%
+  );
+
+  .book-now-wrapper {
+    display: flex;
+    width: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: (289 / @mobile * 100vw);
+    height: (64 / @mobile * 100vw);
+    margin-bottom: (16 / @mobile * 100vw);
+    font-size: (16 / @mobile * 100vw);
+  }
+  .form__btn {
+    margin-bottom: (65 / @mobile * 100vw);
+
+    span {
+      font-size: (12 / @mobile * 100vw);
+    }
+  }
+}

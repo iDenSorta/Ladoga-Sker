@@ -1,0 +1,17 @@
+section#book-now
+    .book-now
+        .wrapper
+            .book-now-wrapper
+                span.title Забронируйте тур
+                    br
+                    | прямо сейчас!
+                .form-book-now-wrapper
+                    form.__form_book-now(action="post")
+                        input(type="text" placeholder="ФИО")
+                        input(type="tel" placeholder="Телефон")
+                        input(type="number" placeholder="Кол-во гостей")
+                        input#book-now-date(type='date' placeholder="Желаемая дата")
+                .form__btn
+                    a.btn(href="book") Забронировать поездку
+                    span Согласие на обработку 
+                        span.link персональных данных

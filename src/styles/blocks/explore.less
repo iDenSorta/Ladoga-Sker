@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.explore-wrapper {
+  span.title {
+    background-image: url(../../img/explore-bg__mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 (55 / @mobile*100vw);
+    margin-bottom: (42 / @mobile*100vw);
+  }
+
+  .explore-card-wrapper {
+    height: fit-content;
+    padding: 0 (16 / @mobile*100vw) (80 / @mobile*100vw) (16 / @mobile*100vw);
+    background-image: url(../../img/symbols__blue.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: (32 / @mobile * 100vw);
+  }
+
+  .explore-img {
+    width: 100%;
+    margin-bottom: (24 / @mobile * 100vw);
+
+    img {
+      width: 100%;
+      border-radius: (16 / @mobile*100vw);
+    }
+  }
+
+  .tags-wrapper {
+    display: flex;
+    gap: (8 / @mobile*100vw);
+    margin-bottom: (16 / @mobile * 100vw);
+  }
+
+  .explore-card__text-wrapper {
+    p {
+      margin: (16 / @mobile * 100vw) 0 (16 / @mobile * 100vw) 0;
+    }
+  }
+}
