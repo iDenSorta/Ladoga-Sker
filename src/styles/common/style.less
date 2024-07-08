@@ -33,6 +33,20 @@ a {
   height: inherit;
 }
 
+input {
+  width: 100%;
+
+  font-size: (16 / @mobile * 100vw);
+  font-weight: 500;
+  text-align: left;
+
+  padding: (16 / @mobile * 100vw);
+
+  border-radius: (12 / @mobile * 100vw);
+  border: solid (2 / @mobile * 100vw);
+  background-color: white;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -130,5 +144,115 @@ span {
     &:before {
       content: "\e901";
     }
+  }
+}
+
+@media (min-width: @desktop) {
+  h1 {
+    font-size: (112 / @desktop * 100vw);
+    font-weight: 700;
+    line-height: (120 / @desktop * 100vw);
+    margin: 0 0 (68 / @desktop * 100vw);
+    text-align: center;
+  }
+
+  span {
+    &.circle {
+      border: (4 / @desktop * 100vw) @color-blue solid;
+      border-radius: (100 / @desktop * 100vw);
+      padding: (0 / @desktop * 100vw) (20 / @desktop * 100vw)
+        (20 / @desktop * 100vw) (20 / @desktop * 100vw);
+    }
+    &.wavy {
+      text-decoration-line: underline;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: (4 / @desktop * 100vw);
+      text-underline-offset: (10 / @desktop * 100vw);
+      text-decoration-style: wavy;
+    }
+    &.arrow {
+      display: inline-block;
+      position: relative;
+      margin-left: (104 / @desktop * 100vw);
+      height: fit-content;
+
+      &::before {
+        position: absolute;
+        bottom: (0 / @desktop * 100vw);
+        right: (1030 / @desktop * 100vw);
+
+        content: "";
+        width: (104 / @desktop * 100vw);
+        height: (104 / @desktop * 100vw);
+        background-image: url(/src/img/h1-arrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    &.big {
+      font-size: (72 / @desktop * 100vw);
+      line-height: (80 / @desktop * 100vw);
+    }
+    &.medium {
+      font-size: (32 / @desktop * 100vw);
+      line-height: (40 / @desktop * 100vw);
+      font-weight: 400;
+    }
+    &.bold {
+      font-weight: bold;
+    }
+    &.title {
+      font-size: (112 / @desktop * 100vw);
+      line-height: (120 / @desktop * 100vw);
+    }
+
+    &.tag {
+      border: (3 / @desktop * 100vw) @color-blue solid;
+      border-radius: (100 / @desktop * 100vw);
+      padding: (12 / @desktop * 100vw) (32 / @desktop * 100vw);
+
+      font-size: (24 / @desktop * 100vw);
+      line-height: (32 / @desktop * 100vw);
+    }
+
+    &.icon {
+      font-family: "icomoon";
+      font-size: 200px;
+      &:before {
+        content: "\e901";
+      }
+    }
+  }
+  .btn {
+    border-radius: (200 / @desktop * 100vw);
+    font-size: (24 / @desktop * 100vw);
+  }
+
+  p {
+    font-size: (24 / @desktop * 100vw);
+    line-height: (40 / @desktop * 100vw);
+  }
+
+  .link {
+    font-size: (32 / @desktop * 100vw);
+    line-height: (36 / @desktop * 100vw);
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .swiper-scrollbar.desktop.swiper-scrollbar-horizontal {
+    background: #d8f3ff;
+    bottom: (-110 / @desktop*100vw);
+    height: (8 / @desktop*100vw);
+  }
+
+  .swiper-scrollbar-drag {
+    background: #83daff !important;
   }
 }

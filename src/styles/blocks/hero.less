@@ -27,3 +27,31 @@
     height: (32 / @mobile * 100vw);
   }
 }
+
+@media (min-width: @desktop) {
+  .hero {
+    height: 73vh;
+    background-image: url(/src/img/hero-bg-desktop.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+    span.orange {
+      font-size: (24 / @desktop * 100vw);
+      line-height: (40 / @desktop * 100vw);
+      margin-top: 0;
+      margin-bottom: (32 / @desktop * 100vw);
+    }
+
+    .img {
+      width: (72 / @desktop * 100vw);
+      height: (72 / @desktop * 100vw);
+    }
+
+    .btn {
+      width: (362 / @desktop * 100vw);
+      height: (88 / @desktop * 100vw);
+      margin-bottom: (68 / @desktop * 100vw);
+    }
+  }
+}

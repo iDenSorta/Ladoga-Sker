@@ -7,6 +7,8 @@ let menulogo = document.querySelector(".logo");
 
 menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
+  document.body.style.overflow =
+    document.body.style.overflow === "hidden" ? "" : "hidden";
   menuWrapper.classList.toggle("active");
   menulogo.classList.toggle("active");
   header.classList.toggle("active");
